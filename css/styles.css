@@ -1,0 +1,187 @@
+/* Global Layout Set-up */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/****************************
+  Page Styles
+****************************/
+
+/* Utility */
+.clearfix:after, .cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Framework */
+body {
+  color: #424a5c;
+}
+
+h1, h2, h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h1, h2, .footer {
+  text-align: center;
+}
+
+h2, h3 {
+  color: #000000;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+fieldset {
+  display: block;
+}
+
+.wrapper {
+  padding: 0 16px;
+}
+
+.header {
+  background-color: #424a5c;
+  color: #ffffff;
+}
+
+.header, .footer {
+  padding: 1.5rem 8px;
+}
+
+.copyright {
+  font-style: italic;
+  color: #8e8e8e;
+}
+
+/* Content */
+.signup {
+  padding: 1.5rem 0;
+  border-bottom: 4px solid #000000;
+}
+
+.signup-blurb {
+  margin-top: 0.75rem;
+  color: #8e8e8e;
+  text-align: center;
+}
+
+.contact, .newsletter {
+  padding: 1.5rem 0;
+  border-top: 2px solid #000000;
+  margin-top: 4px;
+}
+
+.label {
+  display: block;
+  margin: 1rem 0 0.75rem;
+}
+
+.form_field {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 16px;
+  border: 2px solid #efefef;
+  border-radius: 3px;
+  background-color: #efefef;
+  color: #8e8e8e;
+}
+
+.form_field::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+.form_field:focus {
+  border-color: #424a5c;
+  outline: 0;
+}
+
+.form_field.is-zip {
+  width: 144px;
+}
+
+.form_field.is-select {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.form_field.is-textarea {
+  min-height: 6rem;
+}
+
+.newsletter-text {
+  margin: 1.5rem 0 1rem;
+}
+
+.signup_checkbox {
+  margin: 0.5rem 8px 0.5rem 0;
+}
+
+.form_button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #54c7b0;
+  font-size: 1.5rem;
+}
