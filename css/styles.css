@@ -69,7 +69,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, legend {
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -78,7 +78,7 @@ h1, h2, .footer {
   text-align: center;
 }
 
-h2, h3 {
+h2, h3, legend {
   color: #000000;
 }
 
@@ -90,12 +90,24 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
+form {
+  display: block;
+  border-top: 2px solid #000000;
+  margin-top: 4px;
+}
+
 fieldset {
   display: block;
 }
 
+legend {
+  padding-top: 1.5rem;
+}
+
 .wrapper {
   padding: 0 16px;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .header {
@@ -125,9 +137,11 @@ fieldset {
 }
 
 .contact, .newsletter {
-  padding: 1.5rem 0;
-  border-top: 2px solid #000000;
-  margin-top: 4px;
+  padding: 0 0 1.5rem;
+}
+
+.contact {
+  border-bottom: 2px solid #000000;
 }
 
 .label {
@@ -198,18 +212,14 @@ fieldset {
     margin-bottom: 1rem;
   }
 
-  .wrapper {
-    max-width: 600px;
-    margin: 0 auto;
+  legend {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
 
   .signup {
     padding-top: 4rem;
     padding-bottom: 3rem;
-  }
-
-  .contact, .newsletter {
-    padding-top: 3rem;
   }
 
   .contact {
